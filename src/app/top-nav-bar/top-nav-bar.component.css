@@ -1,0 +1,50 @@
+#nav-bar-container {
+  width: clac(100% - var(--container-margin) * 2);
+  height: 5vh;
+  background-color: var(--app-bg-color);
+  display: grid;
+  gap: var(--content-margin);
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: var(--container-margin);
+}
+
+.top-bar-column {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-item {
+  margin-right: var(--content-margin);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#top-navigation {
+  justify-content: center;
+}
+
+#language-selector {
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.language-option {
+  text-align: right;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle {
+  background-color: var(--second-card-first-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--second-card-first-color);
+}
+
+.dropdown-item {
+  background-color: var(--second-card-first-color);
+}
+
+.dropdown-menu {
+  background-color: var(--second-card-first-color);
+  min-width: 100%;
+}

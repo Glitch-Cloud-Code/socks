@@ -1,0 +1,26 @@
+<div id="nav-bar-container">
+  <div id="logo" class="small-text top-bar-column">Logo</div>
+  <div id="top-navigation" class="top-bar-column">
+      <div i18n="@@top-navigation-first-selection" class="small-text top-nav-item" (click)="scrollToServices()">
+        Our services
+      </div>
+      <div i18n="@@top-navigation-second-selection" class="small-text top-nav-item" (click)="scrollToAboutUs()">
+        About us
+      </div>
+      <div i18n="@@top-navigation-third-selection" class="small-text top-nav-item" (click)="scrollToBottomHero()">
+        Go shopping!
+      </div>
+  </div>
+  <div id="language-selector" class="top-bar-column">
+    <!-- <div i18n="@@language-selector" class="small-text language-option">
+      Language selector
+    </div> -->
+    <div ngbDropdown> <!-- **here** -->
+      <button class="btn btn-outline-primary"
+         ngbDropdownToggle>Language</button>
+      <div ngbDropdownMenu>
+        <a class="language-option" ngbDropdownItem *ngFor="let language of languageList" href="/{{language.code}}/">{{language.label}}</a>
+      </div>
+    </div>
+  </div>
+</div>

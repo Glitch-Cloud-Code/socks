@@ -1,0 +1,102 @@
+<ks-modal-gallery id="gallery" [id]="0" [modalImages]="images" [plainGalleryConfig]="plainGalleryConfig"
+  [previewConfig]="previewConfig" [dotsConfig]="dotsConfig" (close)="onModalClosed($event)"></ks-modal-gallery>
+
+<div id="main-content-container">
+  <div id="top-hero-container" class="hero-container">
+    <div id="top-hero" class="hero">
+      <!-- <div i18n="@@hero-welcome-message" id="top-hero-header" class="accent large-text">
+        Main welcome message
+      </div> -->
+      <span id="hero-logo"><img class="logo-image"></span>
+      <div id="top-hero-text-background">
+        <div i18n="@@hero-text" id="top-hero-text" class="hero-text medium-text">
+          Here goes the slogan. It should be long enough to take up some space so I just gonna sing a song of my people
+          "Ladida ladade-e-e-y"
+        </div>
+        <button i18n="@@hero-button" id="top-hero-button" class="hero-button small-text">
+          Go to the store
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="main-services-container" (click)="openGallery(0)">
+    <div class="services-row">
+      <div i18n="@@services-header" id="main-services-header" class="accent large-text">
+        Our services
+      </div>
+      <div i18n="@@services-subheader" id="main-services-subheader" class="medium-text">
+        We do stuff that you prefer not to think about
+      </div>
+      <div id="service-babies" class="main-service">
+        <div class="service-info-container">
+          <h1 i18n="@@first-service-headline" class="large-text">I'm pepega</h1>
+          <p i18n="@@first-service-paragraph" class="small-text">Here comes some info</p>
+          <div i18n="@@first-service-button" class="main-service-info-button medium-text">Kids</div>
+        </div>
+      </div>
+      <div id="service-teenagers" class="main-service">
+        <div class="service-info-container">
+          <h1 i18n="@@second-service-headline" class="large-text">I'm pepega</h1>
+          <p i18n="@@second-service-paragraph" class="small-text">Here comes some info</p>
+          <div i18n="@@second-service-button" class="main-service-info-button medium-text">Teens</div>
+        </div>
+      </div>
+      <div id="service-adults" class="main-service">
+        <div class="service-info-container">
+          <h1 i18n="@@third-service-headline" class="large-text">I'm pepega</h1>
+          <p i18n="@@third-service-paragraph" class="small-text">Here comes some info</p>
+          <div i18n="@@third-service-button" class="main-service-info-button medium-text">Adults</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="transclusion-wrapper" *ngIf="description">
+    <div class="transcluded-description large-text">
+      {{description}}
+    </div>
+    <button i18n="@@hero-button" class="hero-button small-text transcluded-button">
+      Go to the store
+    </button>
+  </div>
+  <div id="gallery-container">
+    <app-gallery>
+    </app-gallery>
+  </div>
+  <div id="about-us-container" class="about-us-container about-us-left">
+    <div id="about-us">
+      <div i18n="@@about-us-header" id="about-us-header" class="accent large-text">
+        About us
+      </div>
+      <div i18n="@@about-us-text-block-1" id="about-us-text-block-1" class="medium-text about-us-text">
+        Weri Spezials is a Latvian-German company located in Riga, operating since 1994. Following centuries-old
+        traditions, Weri Spezials produces durable and ergonomic socks and tights for people of all ages. We stick to
+        eco-friendly manufactory standards, because we care about the health of our customers and the environment.
+      </div>
+    </div>
+  </div>
+  <div class="about-us-image-right about-us-image-container">
+    <div id="about-us-image-1" class="about-us-image">
+    </div>
+  </div>
+  <div class="about-us-image-left about-us-image-container">
+    <div id="about-us-image-2" class="about-us-image">
+    </div>
+  </div>
+  <div class="about-us-image-right about-us-image-container">
+    <div id="about-us-image-3" class="about-us-image">
+    </div>
+  </div>
+  <div id="bottom-hero-container" class="hero-container">
+    <div id="bottom-hero" class="hero">
+      <div i18n="@@bottom-hero-message" id="bottom-hero-header" class="accent large-text">
+        Don't waste your time! Go and shop now!
+      </div>
+      <button i18n="@@hero-button" id="bottom-hero-button" class="hero-button small-text">
+        Go to the store
+      </button>
+    </div>
+  </div>
+  <div id="footer">
+    Footer
+  </div>
+</div>

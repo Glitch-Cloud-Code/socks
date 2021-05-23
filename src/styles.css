@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  font-size: clamp(0.5rem, 2vw, 5rem);
+
+  --container-margin: 3vw;
+  --content-margin: 2vw;
+
+  --app-bg-color: #FFFFFF;
+  --app-text-color: #000000;
+
+  --first-card-bg-color: rgba(255, 235, 184, 0.5);
+  --first-card-first-color: #fffed4;
+  --first-card-second-color: #FFFFFF;
+  --first-card-third-color: #000000;
+
+  --second-card-bg-color: rgba(158, 219, 220, 0.25);
+  --second-card-first-color: #3B8788;
+  --second-card-second-color: #FFFFFF;
+  --second-card-third-color: #000000;
+
+  --big-border-radius: 0;
+  --small-border-radius: 1vw;
+  --header-font-weight: 900;
+  --normal-font-weight: 500
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    font-size: calc(1rem + 0.5vh);
+    --container-margin: 3vh;
+    --content-margin: 2vh;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Roboto !important;
+  font-style: medium !important;
+  color: var(--app-text-color) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #2c2c2c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
+  outline: 2px solid slategrey;
+}
+
+.centered {
+  text-align: center;
+}
+
+.small-text {
+  font-size: 1.5em;
+}
+
+.medium-text {
+  font-size: 2em;
+}
+
+.large-text {
+  font-size: 3em;
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "socks": {
@@ -9,6 +9,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ru": "src/locale/messages.ru.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -24,7 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/assets/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -56,6 +65,13 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ru": {
+              "aot": true,
+              "i18nFile": "src/locale/messages.ru.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -67,6 +83,9 @@
           "configurations": {
             "production": {
               "browserTarget": "socks:build:production"
+            },
+            "ru": {
+              "browserTarget": "socks:build:ru"
             }
           }
         },
@@ -88,7 +107,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/assets/css/bootstrap.min.css"
             ],
             "scripts": []
           }
@@ -119,6 +140,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "socks"
+    }
+  },
+  "defaultProject": "socks",
+  "cli": {
+    "analytics": false
+  }
 }
