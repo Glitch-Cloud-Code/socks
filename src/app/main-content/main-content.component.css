@@ -100,10 +100,11 @@
   grid-column-start: 1;
   grid-column-end: 7;
   width: 100%;
+  overflow: hidden;
 }
 
 .separator-img {
-  width: 110%;
+  width: 105%;
   margin: -5px;
 }
 
