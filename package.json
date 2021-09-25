@@ -34,6 +34,9 @@
     "mousetrap": "^1.6.5",
     "ngx-gallery": "^5.10.0",
     "rxjs": "~6.5.4",
+    "swiper": "^6.7.1",
+    "three-gltf-loader": "^1.111.0",
+    "three.js": "^0.77.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

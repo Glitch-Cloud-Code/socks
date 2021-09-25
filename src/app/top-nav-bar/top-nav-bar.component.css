@@ -1,6 +1,5 @@
 #nav-bar-container {
   width: clac(100% - var(--container-margin) * 2);
-  height: 5vh;
   background-color: var(--app-bg-color);
   display: grid;
   gap: var(--content-margin);
@@ -29,7 +28,8 @@
 }
 
 .language-option {
-  text-align: right;
+  text-align: center;
+  margin-left: var(--content-margin);
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle {

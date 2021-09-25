@@ -9,15 +9,24 @@
       </div> -->
       <span id="hero-logo"><img class="logo-image"></span>
       <div id="top-hero-text-background">
-        <div i18n="@@hero-text" id="top-hero-text" class="hero-text medium-text">
-          Here goes the slogan. It should be long enough to take up some space so I just gonna sing a song of my people
-          "Ladida ladade-e-e-y"
+        <div class="text-group">
+        <div i18n="@@hero-welocme" id="top-hero-welcome" class="hero-text extra-large-text">
+          Weclome
         </div>
-        <button i18n="@@hero-button" id="top-hero-button" class="hero-button small-text">
-          Go to the store
+        <div id="top-hero-text-and-button">
+        <div i18n="@@hero-text" id="top-hero-text" class="hero-text medium-text">
+          Fun high-quality hosiery from Northern Europe
+        </div>
+        <button i18n="@@hero-button" id="top-hero-button" class="hero-button small-text" (click)="scrollToElement('bottom-hero-container')">
+          Shop
         </button>
+        </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="block-separator-wrapper">
+    <img class="separator-img" src="../../assets/images/layered-waves-haikei1.svg">
   </div>
   <div id="main-services-container" (click)="openGallery(0)">
     <div class="services-row">
@@ -31,36 +40,48 @@
         <div class="service-info-container">
           <h1 i18n="@@first-service-headline" class="large-text">I'm pepega</h1>
           <p i18n="@@first-service-paragraph" class="small-text">Here comes some info</p>
-          <div i18n="@@first-service-button" class="main-service-info-button medium-text">Kids</div>
+          <div i18n="@@first-service-button" class="main-service-info-button medium-text">For babies</div>
         </div>
       </div>
       <div id="service-teenagers" class="main-service">
         <div class="service-info-container">
           <h1 i18n="@@second-service-headline" class="large-text">I'm pepega</h1>
           <p i18n="@@second-service-paragraph" class="small-text">Here comes some info</p>
-          <div i18n="@@second-service-button" class="main-service-info-button medium-text">Teens</div>
+          <div i18n="@@second-service-button" class="main-service-info-button medium-text">For kids</div>
         </div>
       </div>
       <div id="service-adults" class="main-service">
         <div class="service-info-container">
           <h1 i18n="@@third-service-headline" class="large-text">I'm pepega</h1>
           <p i18n="@@third-service-paragraph" class="small-text">Here comes some info</p>
-          <div i18n="@@third-service-button" class="main-service-info-button medium-text">Adults</div>
+          <div i18n="@@third-service-button" class="main-service-info-button medium-text">For adults</div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="block-separator-wrapper">
+    <img class="separator-img separator-2" src="../../assets/images/layered-waves-haikei2.svg">
+  </div>
+  <div id="gallery-wrapper">
+    <div i18n="@@services-header" id="gallery-header" class="accent large-text text-white">
+      Gallery
+    </div>
+    <swiper id="swiper" [config]="swiperConfig" [navigation]="true">
+        <ng-template swiperSlide><img src="../../assets/images/gallery-1.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-2.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-3.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-4.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-5.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-6.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-7.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-8.JPG" class="swiper-image"></ng-template>
+        <ng-template swiperSlide><img src="../../assets/images/gallery-9.JPG" class="swiper-image"></ng-template>
+    </swiper>
   </div>
   <div id="transclusion-wrapper" *ngIf="description">
     <div class="transcluded-description large-text">
       {{description}}
     </div>
-    <button i18n="@@hero-button" class="hero-button small-text transcluded-button">
-      Go to the store
-    </button>
-  </div>
-  <div id="gallery-container">
-    <app-gallery>
-    </app-gallery>
   </div>
   <div id="about-us-container" class="about-us-container about-us-left">
     <div id="about-us">

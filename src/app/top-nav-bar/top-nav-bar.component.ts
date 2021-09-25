@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavBarComponent implements OnInit {
 
-  languageList = [    { code: 'en', label: 'EN' },    { code: 'de', label: 'GER' },    { code: 'RU', label: 'RU' }  ];
+  languageList = [   { code: 'de', label: 'DE' }, { code: 'en', label: 'EN' }, { code: 'ru', label: 'RU' }  ];
   constructor() { }
 
   ngOnInit(): void {

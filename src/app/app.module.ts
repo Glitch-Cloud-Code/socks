@@ -8,24 +8,22 @@ import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import 'hammerjs';
-import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
-import { GalleryComponent } from './gallery/gallery.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
-    MainContentComponent,
-    GalleryComponent
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    GalleryModule.forRoot()
+    GalleryModule.forRoot(),
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

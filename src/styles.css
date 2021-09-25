@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~swiper/swiper-bundle';
+
 body,
 html {
   height: 100%;
@@ -60,13 +62,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .small-text {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .medium-text {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .large-text {
   font-size: 3em;
+}
+
+.extra-large-text {
+  font-size: 6em;
 }

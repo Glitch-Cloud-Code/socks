@@ -12,15 +12,6 @@
       </div>
   </div>
   <div id="language-selector" class="top-bar-column">
-    <!-- <div i18n="@@language-selector" class="small-text language-option">
-      Language selector
-    </div> -->
-    <div ngbDropdown> <!-- **here** -->
-      <button class="btn btn-outline-primary"
-         ngbDropdownToggle>Language</button>
-      <div ngbDropdownMenu>
-        <a class="language-option" ngbDropdownItem *ngFor="let language of languageList" href="/{{language.code}}/">{{language.label}}</a>
-      </div>
-    </div>
+      <a class="language-option" *ngFor="let language of languageList" href="/{{language.code}}/">{{language.label}}</a>
   </div>
 </div>
