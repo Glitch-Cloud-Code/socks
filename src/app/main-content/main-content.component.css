@@ -113,7 +113,7 @@
 }
 
 #bottom-hero-container {
-  background-color: rgba(158, 219, 220, 0.5);
+  background-color: rgb(158, 219, 220);
   padding: calc(var(--container-margin) * 2);
 }
 
@@ -147,7 +147,7 @@
 
 #main-services-container {
   background-size: contain;
-  background-image: url("../../assets/images/symbol-scatter-haikei.svg");
+  background: url("../../assets/images/symbol-scatter-haikei.svg");
   width: 100%;
   grid-column: 1 / 7;
   height: auto;
@@ -298,9 +298,17 @@ swiper {
   object-fit: contain;
 }
 
+.about-us-wrapper {
+  padding: var(--container-margin) 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 var(--container-margin);
+  justify-items: center;
+  grid-column: 1 / 7;
+}
+
 .about-us-container {
   margin: var(--container-margin);
-  gap: 1em;
 }
 
 .about-us-right {
@@ -363,10 +371,10 @@ swiper {
 }
 
 #footer {
-  background-color: rgba(232, 123, 120, 0.5);
+  background-color: rgb(255, 197, 196);
   width: 100%;
   grid-column: 1 / 7;
-  height: 20vh;
+  height: 40vh;
   margin-bottom: 0;
   text-align: center;
   line-height: 20vh;
