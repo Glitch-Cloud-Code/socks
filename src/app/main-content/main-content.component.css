@@ -21,6 +21,7 @@
   background-size: contain;
   height: calc(5rem + 100px);
   width: calc(5rem + 100px);
+  border: 3px solid #6d69ff;
 }
 
 .hero {
@@ -43,6 +44,13 @@
   position:absolute;
   display: flex;
   flex-direction: column;
+}
+
+#top-hero-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .text-group {
@@ -70,11 +78,15 @@
 }
 
 #top-hero-button {
-  margin-top: 0;
-  margin-left: var(--content-margin);
   width: fit-content;
   color: var(--first-card-third-color);
   padding: .5rem 2rem .5rem 2rem;
+}
+
+.col-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #top-hero-text-and-button {
@@ -130,10 +142,6 @@
   display: inline-block;
   margin-top: var(--container-margin);
   padding: .5rem 2rem .5rem 2rem;
-}
-
-.hero-text {
-
 }
 
 .hero-button {
@@ -274,7 +282,7 @@
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(7, 11, 30);
+  background-color: rgb(206, 157, 157);
   padding: 1rem;
 }
 
@@ -374,10 +382,8 @@ swiper {
   background-color: rgb(255, 197, 196);
   width: 100%;
   grid-column: 1 / 7;
-  height: 40vh;
   margin-bottom: 0;
   text-align: center;
-  line-height: 20vh;
 }
 
 :host /deep/ #current-image {
@@ -414,12 +420,42 @@ swiper {
   display: contents;
 }
 
+.store-buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store-image {
+  max-width: 300px;
+  max-height: 200px;
+  margin: var(--container-margin) 35px;
+}
+
+.store-image-l {
+  max-width: 350px;
+  max-height: 250px;
+  margin: var(--container-margin) 10px;
+}
+
 @media only screen and (max-width: 1420px) {
 
   #top-hero-container {
     padding-bottom: calc(var(--container-margin) * 3);
   }
 
+  .store-image {
+    max-width: 250px;
+    max-height: 150px;
+    margin: var(--container-margin) 22.5px;
+  }
+
+  .store-image-l {
+    max-width: 275px;
+    max-height: 175px;
+    margin: var(--container-margin) 10px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -440,4 +476,32 @@ swiper {
     margin-bottom: 0;
   }
 
+  #top-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #top-hero-text, #top-hero-welcome {
+    text-align: center;
+  }
+
+  #top-hero-button {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .store-buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .store-image {
+    max-width: 200px;
+    max-height: 130px;
+    margin: var(--container-margin) 20px;
+  }
+
+  .store-image-l {
+    max-width: 225px;
+    max-height: 150px;
+    margin: var(--container-margin) 10px;
+  }
 }

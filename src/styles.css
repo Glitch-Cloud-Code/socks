@@ -69,6 +69,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5em;
 }
 
+.hero-text {
+  font-size: 2.5em;
+}
+
 .large-text {
   font-size: 3em;
 }
