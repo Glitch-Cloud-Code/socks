@@ -7,6 +7,22 @@
   margin: var(--container-margin);
 }
 
+.logo-wrapper {
+  display: flex;
+}
+
+#logo {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+#logo-text {
+  text-transform: uppercase;
+  color: #02437A;
+  text-decoration: bold;
+  font-size: 1.2rem;
+}
+
 .top-bar-column {
   display: flex;
   align-items: center;
@@ -30,6 +46,7 @@
 .language-option {
   text-align: center;
   margin-left: var(--content-margin);
+  cursor: pointer;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle {

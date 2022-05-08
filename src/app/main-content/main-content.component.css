@@ -83,6 +83,10 @@
   padding: .5rem 2rem .5rem 2rem;
 }
 
+.col {
+  padding: 0;
+}
+
 .col-c {
   display: flex;
   align-items: center;
@@ -215,12 +219,12 @@
   position: relative;
 }
 
-.main-service:hover .service-info-container {
+/* .main-service:hover .service-info-container {
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0 0);
   background-color: rgba(255, 255, 255, 0.8);
-}
+} */
 
-.main-service .service-info-container :not(.main-service-info-button) {
+/* .main-service .service-info-container :not(.main-service-info-button) {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -231,7 +235,7 @@
 
 .main-service:hover .service-info-container .main-service-info-button {
   opacity: 0;
-}
+} */
 
 .main-service .service-info-container .main-service-info-button {
   opacity: 1;
@@ -244,7 +248,7 @@
   height: 100%;
   transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
   border-radius: var(--big-border-radius);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .main-service-info-button {
@@ -260,17 +264,17 @@
 }
 
 #service-babies {
-  background: url("../../assets/images/socks-baby.jpg") no-repeat center center;
+  background: url("../../assets/images/socks-baby-2.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #service-teenagers {
-  background: url("../../assets/images/socks-teenagers.jpg") no-repeat center center;
+  background: url("../../assets/images/socks-teenagers-2.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #service-adults {
-  background: url("../../assets/images/socks-adults.jpg") no-repeat center center;
+  background: url("../../assets/images/socks-adults-2.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -282,7 +286,7 @@
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(206, 157, 157);
+  background-color: #A7AECB;
   padding: 1rem;
 }
 
@@ -437,6 +441,70 @@ swiper {
   max-width: 350px;
   max-height: 250px;
   margin: var(--container-margin) 10px;
+}
+
+#footer {
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.get-in-touch {
+  color: brown;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.separator-vertical {
+  width: 0;
+  border-right: 1px solid grey;
+  margin: 0 1rem;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+
+.info {
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.info:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+a {
+  color: #a300007a;
+}
+
+a:hover {
+  color: #a30000;
 }
 
 @media only screen and (max-width: 1420px) {

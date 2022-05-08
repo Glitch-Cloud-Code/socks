@@ -1,0 +1,24 @@
+{
+  "top-hero": {
+    "welcome": "Willcomen!",
+    "text": "Qualitative, hochwertige Baumwolle Strumpfware aus Lettland",
+    "button-text": "Einkaufen"
+  },
+  "main-services": {
+    "header": "Unser Angebot",
+    "subheader": "Wir produzieren verschiedene Socken und Strumpfhosen aus Baumwolle in breitem Sortiment:",
+    "first-service-button": "Für Babys",
+    "second-service-button": "Für Kinder",
+    "third-service-button": "Für Erwachsene"
+  },
+  "about-us": {
+    "header": "Über uns",
+    "text": "Weri Spezials ist deutsch-lettisches Unternehmen, was seit 1994 in einem der drei Baltischen Staaten -Lettland - erfolgreich tätig ist. Wir pflegen die Traditionen der Strumpfherstellung und produzieren mit Liebe bequeme, langhaltige und moderne Strumpfware für unsere Kunden von Klein bis Erwachsen. Das Wohlbefinden und die Gesundheit unserer Kunden ist uns sehr wichtig. Aus dem Grund verwenden wir nur hochwertige und zertifizierte Garne."
+  },
+  "marketplaces": "Unsere Marktplätze",
+  "contacts": {
+    "header": "Get in touch!",
+    "e-mail": "📧 Email: ",
+    "phone": "📞 Phone number:"
+  }
+}

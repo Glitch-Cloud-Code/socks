@@ -1,0 +1,24 @@
+{
+  "top-hero": {
+    "welcome": "Weclome!",
+    "text": "Fun high-quality hosiery from Northern Europe",
+    "button-text": "Shop"
+  },
+  "main-services": {
+    "header": "Our services",
+    "subheader": "We manufacture socks, tights and all other kinds of legwear:",
+    "first-service-button": "For babies",
+    "second-service-button": "For kids",
+    "third-service-button": "For adults"
+  },
+  "about-us": {
+    "header": "About us",
+    "text": "Weri Spezials is a Latvian-German company located in Riga, operating since 1994. Following centuries-old traditions, Weri Spezials produces durable and ergonomic socks and tights for people of every age. We stick to eco-friendly manufactory standards, because we care about the health of our customers and the environment."
+  },
+  "marketplaces": "Our marketplaces",
+  "contacts": {
+    "header": "Get in touch!",
+    "e-mail": "📧 Email: ",
+    "phone": "📞 Phone number:"
+  }
+}

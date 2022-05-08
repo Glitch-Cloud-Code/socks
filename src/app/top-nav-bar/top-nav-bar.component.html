@@ -1,5 +1,8 @@
 <div id="nav-bar-container">
-  <div id="logo" class="small-text top-bar-column">Logo</div>
+  <div class="logo-wrapper">
+    <img id="logo" src="../../assets/images/logo-transparent.png">
+    <div id="logo-text" class="small-text top-bar-column">Weri spezials</div>
+  </div>
   <div id="top-navigation" class="top-bar-column">
       <div i18n="@@top-navigation-first-selection" class="small-text top-nav-item" (click)="scrollToServices()">
         Our services
@@ -12,6 +15,8 @@
       </div>
   </div>
   <div id="language-selector" class="top-bar-column">
-      <a class="language-option" *ngFor="let language of languageList" href="/{{language.code}}/">{{language.label}}</a>
+      <div class="language-option" (click)="useLanguage('en')">EN</div>
+      <div class="language-option" (click)="useLanguage('de')">DE</div>
+      <div class="language-option" (click)="useLanguage('lv')">LV</div>
   </div>
 </div>

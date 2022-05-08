@@ -1,0 +1,24 @@
+{
+  "top-hero": {
+    "welcome": "Sveicināti!",
+    "text": "Kvalitatīvas zeķes un zeķubikses no Latvijas ražotāja",
+    "button-text": "Iepirkties"
+  },
+  "main-services": {
+    "header": "Mūsu piedāvājums",
+    "subheader": "Mēs ražojam visdažādākās zeķes, zeķubikses un citus tekstilizstrādājumus:",
+    "first-service-button": "Zīdaiņiem",
+    "second-service-button": "Bēriem",
+    "third-service-button": "Pieaugušajiem"
+  },
+  "about-us": {
+    "header": "Par mums",
+    "text": "Weri Spezials Ir latviešu-vācu uzņēmums, kas darbojas Rīgā kopš 1994. gada. Ar cieņu pret amata tradīcijām mēs ražojam ērtus un ilgi kalpojošus tekstilizstrādājumus cilvēkiem visos vecumos. Mēs rūpējamies par mūsu klientu komfortu un veselību, tāpēc izmantojam tikai kvalitatīvus un sertificētus materiālus."
+  },
+  "marketplaces": "Tirdzniecības vietas",
+  "contacts": {
+    "header": "Get in touch!",
+    "e-mail": "📧 Email: ",
+    "phone": "📞 Phone number:"
+  }
+}

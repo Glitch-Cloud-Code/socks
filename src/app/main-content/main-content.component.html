@@ -16,28 +16,25 @@
         <div id="top-hero-grid" class="text-group">
           <div class="col">
             <div
-              i18n="@@hero-welocme"
               id="top-hero-welcome"
               class="hero-text extra-large-text"
             >
-              Weclome
+              {{'top-hero.welcome' | translate}}
             </div>
             <div
-              i18n="@@hero-text"
               id="top-hero-text"
               class="hero-text hero-text"
             >
-              Fun high-quality hosiery from Northern Europe
+            {{'top-hero.text' | translate}}
             </div>
           </div>
           <div class="col col-c">
             <button
-              i18n="@@hero-button"
               id="top-hero-button"
               class="hero-button small-text"
               (click)="scrollToElement('bottom-hero-container')"
             >
-              Shop
+            {{'top-hero.button-text' | translate}}
             </button>
           </div>
         </div>
@@ -50,63 +47,44 @@
       src="../../assets/images/layered-waves-haikei1.svg"
     />
   </div>
-  <div id="main-services-container" (click)="openGallery(0)">
+  <div id="main-services-container">
     <div class="services-row">
       <div
-        i18n="@@services-header"
         id="main-services-header"
         class="accent large-text"
       >
-        Our services
+      {{'main-services.header' | translate}}
       </div>
       <div
-        i18n="@@services-subheader"
         id="main-services-subheader"
         class="medium-text"
       >
-        We manufacture socks, tights and all other kinds of legwear
+      {{'main-services.subheader' | translate}}
       </div>
       <div id="service-babies" class="main-service">
         <div class="service-info-container">
-          <h1 i18n="@@first-service-headline" class="large-text">I'm pepega</h1>
-          <p i18n="@@first-service-paragraph" class="small-text">
-            Here comes some info
-          </p>
           <div
-            i18n="@@first-service-button"
             class="main-service-info-button medium-text"
           >
-            For babies
+          {{'main-services.first-service-button' | translate}}
           </div>
         </div>
       </div>
       <div id="service-teenagers" class="main-service">
         <div class="service-info-container">
-          <h1 i18n="@@second-service-headline" class="large-text">
-            I'm pepega
-          </h1>
-          <p i18n="@@second-service-paragraph" class="small-text">
-            Here comes some info
-          </p>
           <div
-            i18n="@@second-service-button"
             class="main-service-info-button medium-text"
           >
-            For kids
+          {{'main-services.second-service-button' | translate}}
           </div>
         </div>
       </div>
       <div id="service-adults" class="main-service">
         <div class="service-info-container">
-          <h1 i18n="@@third-service-headline" class="large-text">I'm pepega</h1>
-          <p i18n="@@third-service-paragraph" class="small-text">
-            Here comes some info
-          </p>
           <div
-            i18n="@@third-service-button"
             class="main-service-info-button medium-text"
           >
-            For adults
+          {{'main-services.third-service-button' | translate}}
           </div>
         </div>
       </div>
@@ -120,7 +98,6 @@
   </div>
   <div id="gallery-wrapper">
     <div
-      i18n="@@services-header"
       id="gallery-header"
       class="accent large-text text-white"
     >
@@ -156,11 +133,6 @@
       /></ng-template>
     </swiper>
   </div>
-  <div id="transclusion-wrapper" *ngIf="description">
-    <div class="transcluded-description large-text">
-      {{ description }}
-    </div>
-  </div>
   <div class="block-separator-wrapper">
     <img
       class="separator-img separator-3"
@@ -171,22 +143,16 @@
     <div id="about-us-container" class="about-us-container about-us-left">
       <div id="about-us">
         <div
-          i18n="@@about-us-header"
           id="about-us-header"
           class="accent large-text"
         >
-          About us
+        {{'about-us.header' | translate}}
         </div>
         <div
-          i18n="@@about-us-text-block-1"
           id="about-us-text-block-1"
           class="medium-text about-us-text"
         >
-          Weri Spezials is a Latvian-German company located in Riga, operating
-          since 1994. Following centuries-old traditions, Weri Spezials produces
-          durable and ergonomic socks and tights for people of every age. We
-          stick to eco-friendly manufactory standards, because we care about the
-          health of our customers and the environment
+        {{'about-us.text' | translate}}
         </div>
       </div>
     </div>
@@ -209,11 +175,10 @@
   <div id="bottom-hero-container" class="hero-container">
     <div id="bottom-hero" class="hero">
       <div
-        i18n="@@bottom-hero-message"
         id="bottom-hero-header"
         class="accent large-text"
       >
-        Our marketplaces
+        {{'marketplaces' | translate}}
       </div>
       <div class="store-buttons-wrapper">
         <a
@@ -252,28 +217,32 @@
     />
   </div>
   <div id="footer">
-    <div class="sertificate-wrapper">
-    <p class="certificate-text">We've got a certificate!</p>
-    <img class="arrow"
-    src="../../assets/images/arrow.png">
-    <button class="certificate-btn">Here it is!</button>
-  </div>
+    <div class="footer-left">
+      <img class="footer-logo" src="../../assets/images/logo-transparent.png" />
 
-  <div class="contacts-wrapper">
-    <span class="contacts-header">Our contacts</span>
-    <div class="separator"></div>
-    <span class="contact-info">CONTACTS GO HERE</span>
-  </div>
-  <div class="made-by-wrapper">
-      <a
-        class="mady-by-link"
-        href="https://www.linkedin.com/in/sergeysmirnovlv/"
-        target="_blank"
-        >Made By</a
-      >
-      <img class="hearth-img">
+      <div class="separator-vertical"></div>
+      <div class="contacts-wrapper">
+        <div class="large-text get-in-touch">{{'contacts.header' | translate}}</div>
+        <div class="email-row">
+          <span class="heading">{{'contacts.e-mail' | translate}}</span
+          ><a href="mailto:info.werispezials@gmail.com" class="info"
+            >info.werispezials@gmail.com</a
+          >
+        </div>
+        <div class="phone-row">
+          <span class="heading">{{'contacts.phone' | translate}}</span
+          ><a href="tel:+37129515872" class="info">+371 29 515 872</a>
+        </div>
+      </div>
     </div>
-    <div class="made-by">
+
+    <div class="footer-right">
+      <a href="../../assets/cerificate.jpg" target="_blank" class="info"
+        ><img
+          class="certificate-logo"
+          src="../../assets/images/certificate-logo.png"
+        />
+      </a>
     </div>
   </div>
 </div>
