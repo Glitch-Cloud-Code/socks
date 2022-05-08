@@ -1,4 +1,10 @@
 {
+  "header": {
+    "logo": "Weri spezials",
+    "services": "Mūsu piedāvājums",
+    "about": "Par mums",
+    "shopping": "Iepirkties"
+  },
   "top-hero": {
     "welcome": "Sveicināti!",
     "text": "Kvalitatīvas zeķes un zeķubikses no Latvijas ražotāja",

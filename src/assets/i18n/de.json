@@ -1,4 +1,10 @@
 {
+  "header": {
+    "logo": "Weri spezials",
+    "services": "Unser angebot",
+    "about": "Über uns",
+    "shopping": "Einkaufen"
+  },
   "top-hero": {
     "welcome": "Willcomen!",
     "text": "Qualitative, hochwertige Baumwolle Strumpfware aus Lettland",

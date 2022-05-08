@@ -1,4 +1,10 @@
 {
+  "header": {
+    "logo": "Weri spezials",
+    "services": "Our services",
+    "about": "About us",
+    "shopping": "Go shopping!"
+  },
   "top-hero": {
     "welcome": "Weclome!",
     "text": "Fun high-quality hosiery from Northern Europe",

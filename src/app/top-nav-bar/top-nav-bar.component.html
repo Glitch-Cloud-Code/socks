@@ -1,17 +1,17 @@
 <div id="nav-bar-container">
   <div class="logo-wrapper">
     <img id="logo" src="../../assets/images/logo-transparent.png">
-    <div id="logo-text" class="small-text top-bar-column">Weri spezials</div>
+    <div id="logo-text" class="small-text top-bar-column">{{'header.logo' | translate}}</div>
   </div>
   <div id="top-navigation" class="top-bar-column">
       <div i18n="@@top-navigation-first-selection" class="small-text top-nav-item" (click)="scrollToServices()">
-        Our services
+        {{'header.services' | translate}}
       </div>
       <div i18n="@@top-navigation-second-selection" class="small-text top-nav-item" (click)="scrollToAboutUs()">
-        About us
+        {{'header.about' | translate}}
       </div>
       <div i18n="@@top-navigation-third-selection" class="small-text top-nav-item" (click)="scrollToBottomHero()">
-        Go shopping!
+        {{'header.shopping' | translate}}
       </div>
   </div>
   <div id="language-selector" class="top-bar-column">
