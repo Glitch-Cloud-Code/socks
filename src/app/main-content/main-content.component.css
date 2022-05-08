@@ -83,6 +83,11 @@
   padding: .5rem 2rem .5rem 2rem;
 }
 
+#top-hero-button:hover {
+  background-color: var(--first-card-first-color-hover);
+  box-shadow: 5px;
+}
+
 .col {
   padding: 0;
 }
@@ -526,6 +531,22 @@ a:hover {
   }
 }
 
+
+@media only screen and (max-width: 750px) {
+  #top-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #top-hero-text, #top-hero-welcome {
+    text-align: center;
+  }
+
+  #top-hero-button {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .about-us-container {
     grid-column: 1 / 7 !important;
@@ -544,19 +565,6 @@ a:hover {
     margin-bottom: 0;
   }
 
-  #top-hero-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #top-hero-text, #top-hero-welcome {
-    text-align: center;
-  }
-
-  #top-hero-button {
-    font-size: 3rem;
-    margin-top: 3rem;
-  }
-
   .store-buttons-wrapper {
     flex-direction: column;
   }
@@ -572,4 +580,106 @@ a:hover {
     max-height: 150px;
     margin: var(--container-margin) 10px;
   }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer div {
+    margin: 5px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .separator-vertical {
+    height: 50%;
+  }
+
+  .info img {
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  .footer-logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+  }
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  --c: white;
+color: var(--c);
+font-size: 25px;
+border: 0.3em solid var(--c);
+border-radius: 0.5em;
+width: 10em;
+height: 2.7em;
+text-transform: uppercase;
+font-weight: bold;
+font-family: sans-serif;
+letter-spacing: 0.1em;
+text-align: center;
+line-height: 2em;
+position: relative;
+overflow: hidden;
+z-index: 1;
+transition: 0.5s;
+margin: 1em;
+}
+
+ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+ul li:hover {
+  color: black;
+}
+
+ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+ul li span:nth-child(1) {
+  --n: 1;
+}
+
+ul li span:nth-child(2) {
+  --n: 2;
+}
+
+ul li span:nth-child(3) {
+  --n: 3;
+}
+
+ul li span:nth-child(4) {
+  --n: 4;
 }

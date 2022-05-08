@@ -29,13 +29,13 @@
             </div>
           </div>
           <div class="col col-c">
-            <button
-              id="top-hero-button"
-              class="hero-button small-text"
-              (click)="scrollToElement('bottom-hero-container')"
-            >
-            {{'top-hero.button-text' | translate}}
-            </button>
+            <ul>
+              <li
+              (click)="scrollToElement('bottom-hero-container')">
+                {{'top-hero.button-text' | translate}}
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
